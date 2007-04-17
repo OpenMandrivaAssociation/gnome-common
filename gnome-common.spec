@@ -1,7 +1,7 @@
 Name:		gnome-common
 Summary:	Gnome-common contains useful things common to building gnome packages
-Version: 2.12.0
-Release:	%mkrel 3
+Version: 2.18.0
+Release:	%mkrel 1
 License: 	GPL
 Group:		Development/GNOME and GTK+
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.bz2
@@ -39,5 +39,3 @@ needed to run GNOME.
 %{_bindir}/*
 %{_datadir}/aclocal/*.m4
 %{_datadir}/gnome-common
-
-
