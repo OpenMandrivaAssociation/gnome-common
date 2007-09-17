@@ -1,6 +1,6 @@
 Name:		gnome-common
 Summary:	Gnome-common contains useful things common to building gnome packages
-Version: 2.18.0
+Version: 2.20.0
 Release:	%mkrel 1
 License: 	GPL
 Group:		Development/GNOME and GTK+
