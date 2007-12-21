@@ -7,6 +7,7 @@ Group:		Development/GNOME and GTK+
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.bz2
 URL: 		http://www.gnome.org/
 Requires:	common-licenses
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires:	pkgconfig gawk
 BuildArch:	noarch
 
