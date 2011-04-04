@@ -1,8 +1,8 @@
 Name:		gnome-common
 Summary:	Gnome-common contains useful things common to building gnome packages
-Version: 2.28.0
-Release:	%mkrel 3
-License: 	GPL
+Version:	2.34.0
+Release:	%mkrel 1
+License: 	GPLv3+
 Group:		Development/GNOME and GTK+
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.bz2
 URL: 		http://www.gnome.org/
@@ -19,16 +19,13 @@ needed to run GNOME.
 %setup -q
 
 %build
-
-# don't use macro, it will confuse configure
-./configure --prefix=%{_prefix} --libdir=%{_libdir}
-
+%configure2_5x
 %make
 
 %install
 [ -n "$RPM_BUILD_ROOT" -a "$RPM_BUILD_ROOT" != / ] && rm -rf $RPM_BUILD_ROOT
 
-%makeinstall
+%makeinstall_std
 
 %clean
 [ -n "$RPM_BUILD_ROOT" -a "$RPM_BUILD_ROOT" != / ] && rm -rf $RPM_BUILD_ROOT
