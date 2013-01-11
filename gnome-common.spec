@@ -1,13 +1,14 @@
 Name:		gnome-common
 Summary:	Gnome-common contains useful things common to building gnome packages
 Version:	3.6.0
-Release:	%mkrel 1
-License: 	GPLv3+
+Release:	2
+License:	GPLv3+
 Group:		Development/GNOME and GTK+
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/3.6/%{name}-%{version}.tar.xz
-URL: 		http://www.gnome.org/
+URL:		http://www.gnome.org/
 Requires:	common-licenses
-BuildRequires:	pkgconfig gawk
+BuildRequires:	pkgconfig
+BuildRequires:	gawk
 BuildArch:	noarch
 
 %description
@@ -22,12 +23,9 @@ needed to run GNOME.
 %make
 
 %install
-[ -n "$RPM_BUILD_ROOT" -a "$RPM_BUILD_ROOT" != / ] && rm -rf $RPM_BUILD_ROOT
-
 %makeinstall_std
 
 %files
-%defattr(-, root, root)
 %doc README ChangeLog 
 %{_bindir}/*
 %{_datadir}/aclocal/*.m4
@@ -54,15 +52,15 @@ needed to run GNOME.
 + Revision: 521485
 - rebuilt for 2010.1
 
-* Mon Sep 21 2009 Götz Waschk <waschk@mandriva.org> 2.28.0-1mdv2010.0
+* Mon Sep 21 2009 GÃ¶tz Waschk <waschk@mandriva.org> 2.28.0-1mdv2010.0
 + Revision: 446588
 - update to new version 2.28.0
 
-* Thu Mar 19 2009 Götz Waschk <waschk@mandriva.org> 2.26.0-1mdv2009.1
+* Thu Mar 19 2009 GÃ¶tz Waschk <waschk@mandriva.org> 2.26.0-1mdv2009.1
 + Revision: 358073
 - update to new version 2.26.0
 
-* Mon Sep 22 2008 Götz Waschk <waschk@mandriva.org> 2.24.0-1mdv2009.1
+* Mon Sep 22 2008 GÃ¶tz Waschk <waschk@mandriva.org> 2.24.0-1mdv2009.1
 + Revision: 286845
 - new version
 
@@ -78,20 +76,20 @@ needed to run GNOME.
   + Olivier Blin <oblin@mandriva.com>
     - restore BuildRoot
 
-* Mon Sep 17 2007 Götz Waschk <waschk@mandriva.org> 2.20.0-1mdv2008.0
+* Mon Sep 17 2007 GÃ¶tz Waschk <waschk@mandriva.org> 2.20.0-1mdv2008.0
 + Revision: 89331
 - new version
 
-* Tue Apr 17 2007 Götz Waschk <waschk@mandriva.org> 2.18.0-1mdv2008.0
+* Tue Apr 17 2007 GÃ¶tz Waschk <waschk@mandriva.org> 2.18.0-1mdv2008.0
 + Revision: 13996
 - new version
 
 
-* Sun Jan 14 2007 Götz Waschk <waschk@mandriva.org> 2.12.0-3mdv2007.0
+* Sun Jan 14 2007 GÃ¶tz Waschk <waschk@mandriva.org> 2.12.0-3mdv2007.0
 + Revision: 108666
 - Import gnome-common
 
-* Sun Jan 14 2007 Götz Waschk <waschk@mandriva.org> 2.12.0-3mdv2007.1
+* Sun Jan 14 2007 GÃ¶tz Waschk <waschk@mandriva.org> 2.12.0-3mdv2007.1
 - Rebuild
 
 * Wed Feb 22 2006 Frederic Crozat <fcrozat@mandriva.com> 2.12.0-2mdk
@@ -100,7 +98,7 @@ needed to run GNOME.
 * Wed Oct 05 2005 Frederic Crozat <fcrozat@mandriva.com> 2.12.0-1mdk
 - Release 2.12.0
 
-* Wed Nov 10 2004 G�tz Waschk <waschk@linux-mandrake.com> 2.8.0-1mdk
+* Wed Nov 10 2004 Götz Waschk <waschk@linux-mandrake.com> 2.8.0-1mdk
 - fix source URL
 - New release 2.8.0
 
