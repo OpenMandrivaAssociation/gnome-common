@@ -1,7 +1,7 @@
 Summary:	Gnome-common contains useful things common to building gnome packages
 Name:		gnome-common
 Version:	3.6.0
-Release:	4
+Release:	5
 License:	GPLv3+
 Group:		Development/GNOME and GTK+
 Url:		http://www.gnome.org/
