@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   gnome-common-3.6.0.tar.xz: 63a99fb27f8288595d516ee927929036312a86e1
+sources:
+  gnome-common-3.14.0.tar.xz: 555ac7de25821f243f1838faa4d602da50237303
