@@ -1,11 +1,13 @@
+%define _disable_rebuild_configure 1
+
 Summary:	Gnome-common contains useful things common to building gnome packages
 Name:		gnome-common
-Version:	3.14.0
-Release:	2
+Version:	3.18.0
+Release:	1
 License:	GPLv3+
 Group:		Development/GNOME and GTK+
 Url:		http://www.gnome.org/
-Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/gnome-common/%{url_version}/%{name}-%{version}.tar.xz
+Source0:	http://download.gnome.org/sources/gnome-common/%{url_version}/%{name}-%{version}.tar.xz
 BuildArch:	noarch
 
 BuildRequires:	gawk
@@ -29,5 +31,4 @@ needed to run GNOME.
 %doc README ChangeLog 
 %{_bindir}/*
 %{_datadir}/aclocal/*.m4
-%{_datadir}/gnome-common
 
