@@ -3,7 +3,7 @@
 Summary:	Gnome-common contains useful things common to building gnome packages
 Name:		gnome-common
 Version:	3.18.0
-Release:	1
+Release:	2
 License:	GPLv3+
 Group:		Development/GNOME and GTK+
 Url:		http://www.gnome.org/
@@ -11,7 +11,13 @@ Source0:	http://download.gnome.org/sources/gnome-common/%{url_version}/%{name}-%
 BuildArch:	noarch
 
 BuildRequires:	gawk
+Requires:	autoconf
+Requires:	autoconf-archive
 Requires:	common-licenses
+Requires:	gettext
+Requires:	libtool
+Requires:	pkgconfig
+Requires:	yelp
 
 %description
 gnome-common is for building various GNOME modules from CVS. It is not
@@ -21,7 +27,7 @@ needed to run GNOME.
 %setup -q
 
 %build
-%configure
+%configure --with-autoconf-archive
 %make
 
 %install
