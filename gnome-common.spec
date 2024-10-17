@@ -6,7 +6,7 @@ Version:	3.18.0
 Release:	10
 License:	GPLv3+
 Group:		Development/GNOME and GTK+
-Url:		http://www.gnome.org/
+Url:		https://www.gnome.org/
 Source0:	http://download.gnome.org/sources/gnome-common/%{url_version}/%{name}-%{version}.tar.xz
 BuildArch:	noarch
 
