@@ -10,6 +10,11 @@ Url:		https://www.gnome.org/
 Source0:	http://download.gnome.org/sources/gnome-common/%{url_version}/%{name}-%{version}.tar.xz
 BuildArch:	noarch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	gawk
 Requires:	autoconf
 Requires:	autoconf-archive
